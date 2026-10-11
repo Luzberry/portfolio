@@ -72,7 +72,7 @@ header {
 }
 
 header h1 {
-    text-shadow: 1px 3px 0 #96969678, 1px 13px 5px #aba8a844;
+    text-shadow: 1px 3px 0 rgba(150, 150, 150, 0.471), 1px 13px 5px rgba(171, 168, 168, 0.267);
 }
 
 nav a {
@@ -128,13 +128,14 @@ nav a:hover {
     .nav-menu.active {
         display: flex;
         flex-direction: column;
-        background-color: var(--font-1);
+        background-color: none;
         padding: 1rem;
     }
 
     .nav-menu a {
-         color: var(--bg-color-1);
+         color: var(--font-1);
     }
+
 
     header {
         padding: 1.5rem 2rem;
@@ -169,6 +170,12 @@ main {
 .portfolio-content h2,
 .contact-content h2 {
     margin: 2rem 0;
+    text-align: center;
+}
+
+
+.about-content p {
+    text-align: center;
 }
 
 
@@ -177,6 +184,7 @@ main {
     background-color: var(--font-1);
     color: var(--bg-color-1);
     border-radius: .3rem;
+    box-shadow: 6px 6px 5px rgba(110, 110, 110, 0.471);
 }
 
 .portfolio-item p {
@@ -200,6 +208,11 @@ footer img {
     display: inline;
     max-width: 2.5rem;
     margin: 0 .5rem;
+    transition: .5s;
+}
+
+footer img:hover {
+    transform: scale(1.5);
 }
 
 @media(max-width: 750px) {
